@@ -1,0 +1,123 @@
+@media screen and (min-width: 0px) {
+
+	section {
+		padding: 50px 10px;
+	}
+
+    * {
+		-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+	}
+
+    html {
+		scroll-behavior: smooth;
+	}
+
+    body, html {
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden !important;
+		font-family: "Roboto", sans-serif;
+	}
+
+    a:hover {
+		cursor: pointer;
+	}
+	
+	p {
+		margin-bottom: 20px;
+	}
+	
+	p, li {
+		line-height: 1.5em;
+		font-size: 1em;
+	}
+	
+	p, a, li, span {
+		color: #292929;
+		margin: 0;
+		line-height: 28px;
+		font-weight: normal;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		line-height: 1.2em;
+		color: #292929;
+		margin-bottom: 30px;
+	}   
+
+    .container {
+		padding: 0 15px;
+		margin: auto;
+	}
+	
+	.section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+    /* Buttons */
+	.button-solid {
+		color: #fff;
+		display: block;
+		margin: auto;
+		text-align: center;
+		text-decoration: none;
+		background: var(--primary);
+		line-height: 50px;
+		width: 250px;
+		border-radius: 3px;
+		font-size: 18px;
+		font-family: "Roboto", sans-serif;
+		-webkit-transition: .2s ease;
+		-o-transition: .2s ease;
+		transition: .2s ease;
+		display: inline-block;
+	}
+	
+	.button-solid:hover {
+		background: #cfa911;
+		-webkit-transition: .2s ease;
+		-o-transition: .2s ease;
+		transition: .2s ease;
+	}
+	
+	button {
+		text-transform: uppercase;
+	}
+	
+	button:hover {
+		cursor: pointer;
+		-webkit-transition: .2s ease;
+		-o-transition: .2s ease;
+		transition: .2s ease;
+	}
+	
+	.button-transparent {
+		display: inline-block;
+		background: transparent;
+		border: 1px solid #fff;
+		border-radius: 3px;
+		text-align: center;
+		font-size: 18px;
+		margin: 10px 0;
+		padding: 0px 30px;
+		color: #FFFFFF;
+		text-decoration: none;
+		-webkit-animation-delay: 0.6s;
+				animation-delay: 0.6s;
+		border-radius: 3px;
+		white-space: nowrap;
+		line-height: 50px;
+		-webkit-transition: .3s ease;
+		-o-transition: .3s ease;
+		transition: .3s ease;
+	}
+	
+	.button-transparent:hover {
+		color: #fff;
+		background: var(--primary);
+		border: none;
+	}
+}
