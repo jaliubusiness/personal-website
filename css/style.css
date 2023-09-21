@@ -1,15 +1,167 @@
 
+:root {
+    --primary-color: #051622;
+    --secondary-color: #1BA098;
+}
 /* #region <-- ----------- ALL SCREEN SIZES ----------- --> */
 #navbar {
 
 }
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/Fonts/Poppins");
+    font-display: swap;
+}
+
+body {
+    background-color: #F8FCFD;
+    font-family: "Poppins", sans-serif;
+}
 /* #endregion */
 
 /*-- ------------------------------------------------------ -->
-<---                        HOME PAGE                       -->
+<---                        NAVBAR                          -->
 <--- ------------------------------------------------------ -*/
 
 @media screen and (min-width: 0px) {
+    #navbar {
+        display: flex;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+        justify-content: flex-end;
+        background-color: white;
+        box-shadow: 0 0 3px 2px lightgray;
+        border-top: none;
+        width: 60%;
+    }
+
+    #navbar-item-list {
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 80px;
+    }
+
+    #name {
+        position: absolute;
+        left: 120px;
+        top: 38px;
+        margin: auto 0;
+        font-size: 1.7rem;
+        color: var(--secondary-color);
+    }
+
+    .list-item {
+        list-style: none;
+        margin: 0 30px;
+        font-size: 1.2rem;
+        color: var(--secondary-color);
+    }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1300px) {
+}
+
+
+/*-- ------------------------------------------------------ -->
+<---                        ABOUT                           -->
+<--- ------------------------------------------------------ -*/
+
+@media screen and (min-width: 0px) {
+    #about {
+        display: flex;
+        position: relative;
+        width: 56%;
+        height: 700px;
+        background-color: white;
+        margin: 80px auto 0 auto;
+        border-radius: 50px;
+        box-shadow: 0 0 5px 5px rgba(60, 64, 67, .08);
+    }
+
+    .text-wrap {
+        width: 65%;
+        position: relative;
+        right: 10%;
+        margin: 40px auto;
+        padding: 10px 50px 10px 0;
+    }
+
+    #about-me-heading {
+        color: var(--secondary-color);
+        font-size: 2rem;
+    }
+
+    .skills-wrap {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 25%;
+        border-radius: 50px;
+    }
+
+    .skill-items-wrap {
+        margin-top: 40px;
+        padding-inline-start: 30px;
+    }
+
+    .skills-title {
+        position: relative;
+        bottom: 5px;
+        color: #F8FCFD;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    .skill-item {
+        list-style: none;
+        font-weight: bold;
+    }
+
+    #atom-img {
+        display: block;
+        margin: 50px auto 0 auto;
+    }
+
+    #link-to-old-sweng-project {
+        color: var(--secondary-color);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #link-to-old-sweng-project:hover {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1300px) {
+}
+
+/*-- -------------------------------------------------------- -->
+<---                        PROJECTS                          -->
+<--- -------------------------------------------------------- -*/
+
+@media screen and (min-width: 0px) {
+    #projects {
+        height: 200px;
+    }
 }
 
 @media screen and (min-width: 768px) {

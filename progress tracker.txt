@@ -1,0 +1,4 @@
+21/09/23
+Done desktop navbar and about me sections. I did
+not do mobile first, but I can do max width breakpoints later 
+on to change up the design as the viewport gets smaller.
