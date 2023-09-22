@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
 
 :root {
     --primary-color: #051622;
@@ -20,48 +26,6 @@ body {
 }
 /* #endregion */
 
-/*-- ------------------------------------------------------ -->
-<---                        NAVBAR                          -->
-<--- ------------------------------------------------------ -*/
-
-@media screen and (min-width: 0px) {
-    #navbar {
-        display: flex;
-        height: 100px;
-        margin: 0 auto;
-        position: relative;
-        justify-content: flex-end;
-        background-color: white;
-        box-shadow: 0 -2px 3px 2px lightgray;
-        width: 60%;
-    }
-
-    #navbar-item-list {
-        display: flex;
-        align-items: center;
-        position: relative;
-        right: 80px;
-    }
-
-
-
-    .list-item {
-        list-style: none;
-        margin: 0 20px;
-        font-size: 1.2rem;
-        color: var(--secondary-color);
-    }
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1024px) {
-}
-
-@media screen and (min-width: 1300px) {
-}
-
 /*-- -------------------------------------------------------- -->
 <---                        MY NAME                           -->
 <--- -------------------------------------------------------- -*/
@@ -74,7 +38,7 @@ body {
     .my-name-img {
         background-image: url("/Images/breathtaking.jpg");
         background-size: contain;
-        height: 960px;
+        height: 980px;
         filter: blur(2px);
     }
 
@@ -112,15 +76,46 @@ body {
 @media screen and (min-width: 1300px) {
 }
 
-
-
-
 /*-- ------------------------------------------------------ -->
 <---                        ABOUT                           -->
 <--- ------------------------------------------------------ -*/
 
 @media screen and (min-width: 0px) {
-    #about {
+
+    #menu-wrap {
+        position: relative;
+    }
+
+    #menu {
+        height: 400px;
+        width: 200px;
+        position: absolute;
+        justify-content: center;
+        background-color: var(--secondary-color);
+        top: 100px;
+        left: 7%;
+        border-radius: 50px;
+        padding-top: 80px;
+    }
+
+    .menu-sticky {
+        position: fixed !important;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .list-item {
+        list-style: none;
+        text-align: center;
+        margin: auto;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    #about-me {
         display: flex;
         position: relative;
         width: 56%;
