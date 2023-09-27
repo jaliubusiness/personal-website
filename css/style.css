@@ -21,7 +21,6 @@
 }
 
 body {
-    background-color: #F8FCFD;
     font-family: "Poppins", sans-serif;
 }
 /* #endregion */
@@ -38,7 +37,8 @@ body {
     .my-name-img {
         background-image: url("/Images/breathtaking.jpg");
         background-size: contain;
-        height: 980px;
+        width: 1920px;
+        height: 1000px;
         filter: blur(2px);
     }
 
@@ -116,72 +116,124 @@ body {
     }
 
     #about-me {
-        display: flex;
-        position: relative;
-        width: 56%;
-        height: 750px;
         background-color: white;
-        margin: 80px auto 0 auto;
-        border-radius: 50px;
-        box-shadow: 0 0 5px 5px rgba(60, 64, 67, .08);
+        height: 400px;
+    }
+
+    #about-me-wrap {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+
+    #face {
+        border-radius: 50%;
+        margin: auto 0;
+        width: 250px;
+    }
+
+    .bar {
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        background-color: gray;
+        display: block;
+        top: 20%;
+        opacity: 0.2;
     }
 
     .text-wrap {
-        width: 65%;
+        margin: 0 0 0 200px;
         position: relative;
-        right: 10%;
-        margin: 40px auto;
-        padding: 10px 50px 10px 0;
+        font-size: 1.2rem;
+        width: 100%;
     }
 
     #about-me-heading {
         color: var(--secondary-color);
-        font-size: 2rem;
+        font-size: 2.3rem;
+        position: relative;
+        left: 40%;
+        line-height: 0px;
     }
+}
 
-    .skills-wrap {
-        background-color: var(--secondary-color);
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1300px) {
+}
+
+/*-- -------------------------------------------------------- -->
+<---                        SKILLS                            -->
+<--- -------------------------------------------------------- -*/
+
+@media screen and (min-width: 0px) {
+    #skills {
+        background-color: #F5F5F0;
         color: var(--primary-color);
         justify-content: center;
-        position: absolute;
-        right: 0;
-        height: 100%;
-        width: 25%;
+        height: 500px;
         border-radius: 50px;
-    }
-
-    .skill-items-wrap {
-        margin-top: 60px;
-        padding-inline-start: 30px;
-    }
-
-    .skills-title {
         position: relative;
-        bottom: 5px;
-        color: #F8FCFD;
+    }
+
+    #skills h2 {
         font-weight: bold;
-        font-size: 1.1rem;
+        text-align: center;
+        padding-top: 50px;
+        font-size: 1.8rem;
     }
 
-    .skill-item {
-        list-style: none;
-        font-weight: bold;
+    #skills-wrap {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 80%;
+        position: relative;
+        left: 20%;
     }
 
-    #atom-img {
-        display: block;
-        margin: 50px auto 0 auto;
-        box-shadow: 0 0 5px 1px white;
+    #skills-wrap .bar {
+        top: -18px;
     }
 
-    #link-to-old-sweng-project {
-        color: var(--secondary-color);
-        text-decoration: none;
-        cursor: pointer;
+    .skill-column {
+        height: 100%;
+        width: 200px;
+        margin: 0 80px;
+        text-align: center;
+        padding-top: 5px;
+    }
+    
+    .skill-column h3 {
+        position: relative;
+        top: 2%;
+        font-weight: normal;
+        font-size: 1.2rem;
+        white-space: nowrap;
     }
 
-    #link-to-old-sweng-project:hover {
-        text-decoration: underline;
+    #too-long {
+        position: relative;
+        right: 5%;
+    }
+
+    .skill-svg-icon {
+        height: 40px;
+    }
+
+    
+    .skills-list-item {
+        font-size: 1.2rem;
+        text-align: left;
     }
 }
 
@@ -200,7 +252,55 @@ body {
 
 @media screen and (min-width: 0px) {
     #projects {
-        height: 200px;
+        background-color: white;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        position: relative
+    }
+
+    #projects h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 2rem;
+        font-weight: normal;
+    }
+
+    #projects .bar {
+        top: 120px;
+        width: 60%;
+        left: 20%;
+    }
+
+    .a-project {
+        border: 1px black solid;
+        height: 500px;
+        width: 60%;
+        margin: 50px auto;
+        display: flex;
+    }
+
+    .project-image {
+        width: 300px;
+    }
+
+    .project-description {
+        width: 100%;
+        position: relative;
+        margin: 20px 50px;
+    }
+
+    .project-description h2 {
+        text-align: center;
+        font-weight: normal;
+        font-family: "Open Sans", sans-serif;
+        margin-top: 20px;
+    }
+
+    #projects .project-description .bar {
+        top: 60px;
+        width: 100%;
+        left: 0;
     }
 }
 
@@ -212,4 +312,3 @@ body {
 
 @media screen and (min-width: 1300px) {
 }
-
