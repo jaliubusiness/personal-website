@@ -411,3 +411,13 @@ body {
     font-size: 1.3rem;
 }
 
+.links {
+    display: flex;
+    justify-content: right;
+    margin-right: 25vw;
+}
+
+.link img {
+    width: 50px;
+    margin: auto 10px;
+}
