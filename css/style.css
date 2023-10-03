@@ -10,9 +10,6 @@
     --secondary-color: #1BA098;
 }
 /* #region <-- ----------- ALL SCREEN SIZES ----------- --> */
-#navbar {
-
-}
 
 @font-face {
     font-family: "Poppins";
@@ -67,13 +64,33 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1100px) {
+    #name {
+        transform: none;
+        width: 80%;
+        top: 25%;
+        left: 14%;
+        font-size: 10rem;
+    }
+
+    #name::before {
+        font-size: 2rem;
+    }
 }
 
-@media screen and (min-width: 1024px) {
-}
+@media screen and (max-width: 700px) {
+    #name {
+        left: 10%;   
+        font-size: 20vw;
+    }
 
-@media screen and (min-width: 1300px) {
+    #name::before {
+        left: 15%;
+        font-size: 1.5rem;
+    }
+    .my-name-img {
+        height: 80vh;
+    }
 }
 
 /*-- ------------------------------------------------------ -->
@@ -131,7 +148,7 @@ body {
     #face {
         border-radius: 50%;
         margin: auto 0;
-        width: 250px;
+        max-width: 250px;
     }
 
     .bar {
@@ -154,21 +171,53 @@ body {
     #about-me-heading {
         color: var(--secondary-color);
         font-size: 2.3rem;
-        position: relative;
-        left: 40%;
         line-height: 0px;
+        height: 100px;
+        text-align: center;
+        padding-top: 20px;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1300px) {
+    .text-wrap {
+        margin-left: 100px;
+    }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1100px) {
+    #about-me-wrap {
+        flex-direction: column;
+    }
+
+    #face {
+        margin: 30px auto;
+    }
+
+    .text-wrap {
+        margin: 0;
+    }
+
+    #about-me {
+        height: auto;
+        margin-bottom: 30px;    
+    }
+
+    #about-me .bar {
+        top: 15%;
+
+    }
+
+    #about-me-heading {
+        height: 80px;
+        padding-top: 0;
+    }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (max-width: 700px) {
+    #about-me .bar {
+        top: 10%;
+    }
 }
-
 /*-- -------------------------------------------------------- -->
 <---                        SKILLS                            -->
 <--- -------------------------------------------------------- -*/
@@ -237,13 +286,32 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1500px) {
+    #skills-wrap {
+        width: 80%;
+        left: 10%;
+    }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1200px) {
+    #skills-wrap {
+        width: 90%;
+        left: 5%;
+    }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (max-width: 1100px) {
+    #skills {
+        height: 1000px;
+    }
+
+    #skills-wrap {
+        flex-direction: column;
+    }
+
+    .skill-column {
+        margin-top: 30px;
+    }
 }
 
 /*-- -------------------------------------------------------- -->
@@ -304,35 +372,42 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1300px) {
+    .a-project {
+        width: 80%;
+    }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 960px) {
+    #projects {
+        height: auto;
+    }
+
+    .a-project {
+        flex-direction: column;
+        width: 300px;
+        height: auto;
+    }
+
+    .project-description {
+        margin: 0;
+        padding: 20px
+    }
+
+    .project-description h2 {
+        margin-top: 0;
+    }
 }
 
-@media screen and (min-width: 1300px) {
-}
 
 /*-- -------------------------------------------------------- -->
 <---                        CREDIT                            -->
 <--- -------------------------------------------------------- -*/
 
-@media screen and (min-width: 0px) {
-    #credit {
-        height: 100px;
-        text-align: center;
-        background-color: #F5F5F0;
-        font-size: 1.3rem;
-
-    }
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1024px) {
-}
-
-@media screen and (min-width: 1300px) {
+#credit {
+    height: 100px;
+    text-align: center;
+    background-color: #F5F5F0;
+    font-size: 1.3rem;
 }
 
