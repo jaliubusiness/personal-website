@@ -50,6 +50,7 @@ body {
         text-transform: uppercase;
         font-family: "Poppins", sans-serif;
         font-weight: 700;
+        white-space: nowrap;
     }
 
     #name::before {
@@ -71,6 +72,7 @@ body {
         top: 25%;
         left: 14%;
         font-size: 10rem;
+        white-space: normal;
     }
 
     #name::before {
