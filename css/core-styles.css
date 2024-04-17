@@ -128,14 +128,18 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
 	background-color: #F5F5F0;;
 	width: 7vw;
 	height: 5vh;
 	border-radius: 10px;
-	bottom: -5vh;
-	left: 50%;
-	transform: translateX(-50%);
+	margin-top: 1vh;
 	z-index: 10;
 	border: 1px solid black;
+}
+
+.face-and-cv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
