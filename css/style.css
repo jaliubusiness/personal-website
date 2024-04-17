@@ -309,9 +309,9 @@ body {
 
 @media screen and (max-width: 1100px) {
     .CV {
-        margin-bottom: 8vh;
-        margin-top: -4vh;
-        height: 6vh;
+        margin-bottom: 5vh;
+        margin-top: -3vh;
+        /* height: 6vh; */
     }
 
     #skills {
